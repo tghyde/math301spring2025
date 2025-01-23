@@ -7,6 +7,7 @@ Modified by: Trevor Hyde
 -/
 
 import Mathlib.Tactic -- imports all the Lean tactics
+set_option linter.unusedTactic false
 
 -- Throughout this sheet, `P`, `Q` and `R` will denote propositions.
 variable (P Q R : Prop)

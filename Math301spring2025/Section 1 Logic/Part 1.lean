@@ -6,7 +6,11 @@ Original Author: Kevin Buzzard
 Modified by: Trevor Hyde
 -/
 
-import Mathlib.Tactic -- imports all of the tactics in Lean's maths library
+-- imports all of the tactics in Lean's maths library
+import Mathlib.Tactic
+
+-- Set's a certain option for convenience
+set_option linter.unusedTactic false
 
 -- Throughout this sheet, `P`, `Q` and `R` will denote propositions. `P : Prop` means that `P` is a proposition.
 variable (P Q R : Prop)

@@ -7,6 +7,7 @@ Modified by: Trevor Hyde
 -/
 
 import Mathlib.Tactic -- import all the tactics
+set_option linter.unusedTactic false
 
 -- Throughout this sheet, `P`, `Q` and `R` will denote propositions.
 variable (P Q R : Prop)

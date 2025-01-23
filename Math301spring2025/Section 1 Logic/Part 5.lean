@@ -6,6 +6,7 @@ Original Author: Kevin Buzzard
 Modified by: Trevor Hyde
 -/
 import Mathlib.Tactic -- imports all the Lean tactics
+set_option linter.unusedTactic false
 variable (P Q R S : Prop)
 
 /-!
