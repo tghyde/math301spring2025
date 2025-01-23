@@ -1,17 +1,25 @@
 import Lake
 open Lake DSL
 
-package «math301spring2025» where
+-- package math301 where
+--   moreServerArgs := #[
+--     "-Dlinter.unusedVariables=false", -- ignores unused variables
+--     "-DquotPrecheck=false",
+--     "-DwarningAsError=false",
+--     "-Dpp.unicode.fun=true"  -- pretty-prints `fun a ↦ b`
+--   ]
+
+package math301 where
   leanOptions := #[
     ⟨`pp.unicode.fun, true⟩, -- pretty-prints `fun a ↦ b`
     ⟨`pp.proofs.withType, false⟩,
     ⟨`autoImplicit, false⟩,
-    ⟨`relaxedAutoImplicit, false⟩
+    ⟨`pp.fieldNotation, false⟩,
+    ⟨`relaxedAutoImplicit, false⟩,
+    ⟨`linter.unusedTactic, false⟩
   ]
 
-require "leanprover-community" / "mathlib" @ git "v4.15.0"
+lean_lib Library
 
-@[default_target]
-lean_lib «math301spring2025» {
-  -- add any library configuration options here
-}
+
+require "leanprover-community" / "mathlib" @ git "v4.15.0"
