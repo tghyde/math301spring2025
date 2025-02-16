@@ -9,5 +9,5 @@ set_option pp.fieldNotation false
 
 
 theorem bezout (a b : ℕ) : ∃ m n : ℤ, Nat.gcd a b = m * a + n * b := by
-
+sorry
 done
